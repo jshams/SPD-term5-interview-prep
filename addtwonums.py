@@ -33,7 +33,12 @@ Think out loud:
     What if instead we could skip this step and use the adding process we learned in 2nd grade. 
     This is adding the numbers by their placement from back to front 
     (exactly how they're given to us) and if the sum is above 10 add 1 to the next place.
-'''
+
+Rationale:
+    Using this method we only have to iterate over each linked list once and we do them simultaneously.
+    The time complexity is O(n)
+    The memory complexity is O(n)
+    '''
 
 class Solution(object):
     def addTwoNumbers(self, node1, node2):
