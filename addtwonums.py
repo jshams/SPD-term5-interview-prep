@@ -6,7 +6,12 @@ class ListNode(object):
 
 '''
 Restate the question:
-    Given two linked lists with digits as the values of the nodes in reverse order, return the sum of the two linked lists in the same reversed order format. The format of the linked list is reversed so 1 -> 2 -> 3 represents 321. An example input is 1 -> 2 -> 3 , 3 - > 4 -> 5. This is also 321 + 543 = 864 so you would return 4 -> 6 -> 8. There can also be no trailing zeroes except for when the number is 0 and there is one.
+    Given two linked lists with digits as the values of the nodes in reverse order, 
+    return the sum of the two linked lists in the same reversed order format. 
+    The format of the linked list is reversed so 1 -> 2 -> 3 represents 321. 
+    An example input is 1 -> 2 -> 3 , 3 - > 4 -> 5. 
+    This is also 321 + 543 = 864 so you would return 4 -> 6 -> 8. 
+    There can also be no trailing zeroes except for when the number is 0 and there is one.
 
 Clarifying questions:
     Can any of the numbers be negative?
@@ -22,8 +27,12 @@ Assumptions:
     input is always a linked list of numbers
 
 Think out loud:
-    To do this we have to first translate these linked list representations into numbers, add them up, then put them back into this linked list format, and return that. This approach is great, but we need to translate the linked list to an int, then translate it back. 
-    What if instead we could skip this step and use the adding process we learned in 2nd grade. This is adding the numbers by their placement from back to front (exactly how they're given to us) and if the sum is above 10 add 1 to the next place.
+    To do this we have to first translate these linked list representations into numbers, 
+    add them up, then put them back into this linked list format, and return that. 
+    This approach is great, but we need to translate the linked list to an int, then translate it back. 
+    What if instead we could skip this step and use the adding process we learned in 2nd grade. 
+    This is adding the numbers by their placement from back to front 
+    (exactly how they're given to us) and if the sum is above 10 add 1 to the next place.
 '''
 
 class Solution(object):
